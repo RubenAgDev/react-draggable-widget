@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './as_widget.css';
+import styles from './AsWidget.css';
 
 const WIDGET_CSS_CLASS = 'widget';
 const OVER_CSS_CLASS = 'over';
