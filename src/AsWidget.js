@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './AsWidget.css';
 
 const WIDGET_CSS_CLASS = 'widget';
@@ -97,16 +98,16 @@ export default (WrappedComponent, settingsList) => {
     }
 
     AsWidget.propTypes = {
-        id: React.PropTypes.string.isRequired,
-        gridIndex: React.PropTypes.number.isRequired,
-        onClose: React.PropTypes.func.isRequired,
-        onDrag: React.PropTypes.func.isRequired,
-        onDragEnter: React.PropTypes.func.isRequired,
-        onDrop: React.PropTypes.func.isRequired,
-        onSettingsClick: React.PropTypes.func.isRequired,
-        widgetDrag: React.PropTypes.string.isRequired,
-        widgetDragEnter: React.PropTypes.string.isRequired,
-        widgetExpanded: React.PropTypes.string.isRequired
+        id: PropTypes.string.isRequired,
+        gridIndex: PropTypes.number.isRequired,
+        onClose: PropTypes.func.isRequired,
+        onDrag: PropTypes.func.isRequired,
+        onDragEnter: PropTypes.func.isRequired,
+        onDrop: PropTypes.func.isRequired,
+        onSettingsClick: PropTypes.func.isRequired,
+        widgetDrag: PropTypes.string.isRequired,
+        widgetDragEnter: PropTypes.string.isRequired,
+        widgetExpanded: PropTypes.string.isRequired
     }
 
     return AsWidget;
